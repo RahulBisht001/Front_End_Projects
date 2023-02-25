@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap");
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: 0;
+}
+body {
+	background-color: #9a80dc;
+	color: white;
+}
+/* ---------------------Calculator------------------------ */
+.center {
+	margin: 20px 0;
+	margin-top: 10px;
+	text-align: center;
+	letter-spacing: 0.3ch;
+	color: rgb(0, 0, 0);
+	font-family: "Ubuntu", sans-serif;
+}
+
+.bar {
+	display: flex;
+	/* display: flex; */
+	justify-content: flex-end;
+	padding: 0;
+	margin: 5px 40%;
+	font-size: 18px;
+}
+.barMenu {
+	display: none;
+	/* display: flex; */
+	justify-content: center;
+	z-index: 5;
+	position: relative;
+}
+.menu {
+	height: 100px;
+	width: 265px;
+	border-radius: 10px;
+	background-color: #f81345;
+}
+/* .barMenu ::after {
+	transition: top 0.5s;
+	background-color: #f81345;
+} */
+/* .menu ::after {
+	transition: top 0.5s;
+} */
+.menu a {
+	display: block;
+	text-align: center;
+	margin: 5px 20px;
+	padding: 5px 20px;
+	color: black;
+	font-size: 18px;
+	font-weight: 700;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+		"Lucida Sans", Arial, sans-serif;
+	text-decoration: none;
+	border-radius: 12px;
+}
+.menu a:hover {
+	color: rgb(255, 255, 255);
+}
+#closeBar {
+	display: flex;
+	justify-content: flex-end;
+	margin: 5px 3%;
+	font-size: 18px;
+}
+
+/* ------------------Input / Output Container ------------------------------ */
+.inputDiv {
+	display: flex;
+	justify-content: center;
+	padding: 15px;
+	padding-top: 8px;
+	padding-bottom: 5px;
+}
+.input {
+	padding: 13px 13px;
+	outline: none;
+	border: none;
+	background-color: #f8f8f8;
+	border-radius: 12px;
+	font-size: 18px;
+	font-weight: 700;
+}
+/* --------------------Calculator Container for Number and symbols---------------------------- */
+.mainContainer {
+	display: flex;
+	justify-content: center;
+}
+.container {
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #bfbfbf;
+	border-top-left-radius: 12px;
+	border-bottom-left-radius: 12px;
+}
+/* -----------Calculator Button ----------- */
+.btn {
+	font-family: "Ubuntu", sans-serif;
+	padding: 23px;
+	margin: 3px 3px;
+	margin-left: 8px;
+	border: none;
+	cursor: pointer;
+	font-size: 15px;
+	font-weight: 600;
+	background-color: #bfbfbf;
+	border-radius: 12px;
+}
+.btn:hover {
+	transition: 0.2s;
+	box-shadow: 2px 3px 10px rgb(74, 74, 74);
+	/* background-color: rgb(116, 248, 127); */
+}
+.symbol {
+	display: flex;
+	flex-direction: column;
+	padding-left: 5px;
+	padding-top: 10px;
+	border-top-right-radius: 12px;
+	border-bottom-right-radius: 12px;
+	background-color: #bfbfbf;
+}
+.Sbtn {
+	font-family: "Ubuntu", sans-serif;
+	padding: 10px 13px;
+	margin: 2px 10px;
+	cursor: pointer;
+	font-size: 20px;
+	background-color: #bfbfbf;
+	border: none;
+	background-color: rgb(98, 203, 98);
+	border-radius: 9px;
+}
+#equalTo {
+	background-color: rgb(238, 44, 44);
+	border-radius: 10px;
+	padding: 20px 10px;
+}
+#clear {
+	background-color: rgb(253, 253, 60);
+	border-radius: 10px;
+	padding: 12px;
+	margin-left: 15px;
+}
+
+@media only screen and (max-width: 800px) {
+	.bar {
+		margin: 5px 15%;
+	}
+}

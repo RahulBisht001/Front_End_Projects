@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Simple Interest Calculator</title>
+		<link rel="stylesheet" href="CSS/SimpleInterest.css" />
+	</head>
+	<body>
+		<div class="container" id="container">
+			<div class="formDiv" id="formDiv">
+				<p class="label">Principle (Rs.) :</p>
+				<input type="text" name="" id="principle" value="0" />
+				<p class="label">Rate :</p>
+				<input type="text" name="" id="Rate" value="0" />
+				<p class="label">Year</p>
+				<input type="text" name="" id="Year" value="0" />
+
+				<div class="complete">
+					<input type="submit" value="Calculate" onclick="compute()" />
+				</div>
+
+				<div class="result">
+					<p id="pAmount">Principle Amount : Rs. 1000</p>
+					<p id="Interest">Total Interest : Rs. 1500</p>
+					<p id="Total">Total Value : Rs. 3450</p>
+				</div>
+			</div>
+			<div class="msg">
+				<p>Calculate</p>
+				<p>Your</p>
+				<h2>Simple Interest</h2>
+			</div>
+		</div>
+		<script src="JS/Simple_interset.js"></script>
+	</body>
+</html>

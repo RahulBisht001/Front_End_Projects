@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Loan Calculator</title>
+		<link rel="stylesheet" href="CSS/Loan.css" />
+	</head>
+	<body>
+		<div class="header">
+			<h1>EMI Calculator</h1>
+		</div>
+		<div class="outerContainer">
+			<div class="container">
+				<div class="leftBar">
+					<form action="" class="formDiv">
+						<p class="label">Total Amount (Rs.) :</p>
+						<input type="text" name="" id="principle" placeholder="Rs 1000" />
+						<p class="label">Interest Rate:</p>
+						<div class="slidecontainer">
+							<input
+								type="range"
+								min="0"
+								max="100"
+								value="0"
+								class="slider"
+								id="Rate"
+							/>
+							<p><span id="val"></span></p>
+						</div>
+
+						<p class="label">Term(*in years)</p>
+
+						<div class="slidecontainer">
+							<input
+								type="range"
+								min="0"
+								max="50"
+								value="0"
+								class="slider"
+								id="Term"
+							/>
+							<p><span id="time"></span></p>
+						</div>
+
+						<!-- -----------------Calculate Button ---------------- -->
+						<div class="Calculate">
+							<input type="submit" value="Calculate" onclick="calculate()" />
+						</div>
+					</form>
+				</div>
+				<div class="rightBar">
+					<div class="result">
+						<p class="payment">Total Payment</p>
+						<p id="amount">0</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			const slider1 = document.getElementById("Rate");
+			const output1 = document.getElementById("val");
+			output1.innerHTML = slider1.value;
+			slider1.oninput = function () {
+				output1.innerHTML = this.value;
+			};
+		</script>
+		<script>
+			const slider2 = document.getElementById("Term");
+			const output2 = document.getElementById("time");
+			output2.innerHTML = slider2.value;
+			slider2.oninput = function () {
+				output2.innerHTML = this.value;
+			};
+		</script>
+		<script src="JS/Loan.js"></script>
+	</body>
+</html>

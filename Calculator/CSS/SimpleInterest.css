@@ -1,0 +1,132 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-weight: 600;
+}
+
+:root {
+	--FONTFAMILY: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+		"Lucida Sans", Arial, sans-serif;
+}
+body {
+	background-color: rgb(121, 230, 121);
+}
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-top: 5%;
+}
+
+.formDiv {
+	width: 30%;
+	padding: 20px;
+	background-color: white;
+	border-radius: 20px;
+	/* height: 380px; */
+	/* Height will be 300 px util you click the compute button */
+	height: 300px;
+}
+.formDiv input[type="text"] {
+	outline: none;
+	display: flex;
+	padding: 5px;
+	border: none;
+	border-bottom: 2px solid black;
+	display: flex;
+	width: 80%;
+}
+.label {
+	margin: 2px;
+	font-family: var(--FONTFAMILY);
+}
+
+.msg {
+	display: block;
+	justify-content: center;
+	align-items: center;
+	margin-left: 5%;
+	color: #020202;
+	/* font-size: 30px; */
+}
+.msg p {
+	font-size: 40px;
+	font-weight: 600;
+	/* font-family: var(--FONTFAMILY); */
+	font-family: sans-serif;
+}
+.msg h2 {
+	font-size: 70px;
+	/* font-family: var(--FONTFAMILY); */
+	font-family: sans-serif;
+}
+
+.complete {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 5px 0;
+}
+
+.complete input[type="submit"] {
+	font-size: 20px;
+	font-family: var(--FONTFAMILY);
+	font-weight: 800;
+	border-radius: 15px;
+	border: none;
+	width: 70%;
+	padding: 10px;
+	background-color: rgb(74, 250, 121);
+}
+.complete input[type="submit"]:hover {
+	background-color: rgb(14, 152, 76);
+	color: white;
+}
+.result {
+	/* Display will be none util you click on completer button */
+	display: none;
+	margin-top: 10px;
+	padding: 20px;
+	background-color: rgb(189, 255, 235);
+	border-radius: 20px;
+	text-align: center;
+}
+
+.result p {
+	margin: 10px 2px;
+	font-family: var(--FONTFAMILY);
+}
+
+@media only screen and (max-width: 800px) {
+	.msg {
+		display: block;
+		justify-content: center;
+		align-items: center;
+		margin-left: 5%;
+		color: #020202;
+		/* font-size: 30px; */
+	}
+	.msg p {
+		font-size: 30px;
+		font-weight: 600;
+		/* font-family: var(--FONTFAMILY); */
+		font-family: sans-serif;
+	}
+	.msg h2 {
+		font-size: 45px;
+		/* font-family: var(--FONTFAMILY); */
+		font-family: sans-serif;
+	}
+	.container {
+		flex-direction: column-reverse;
+	}
+	.formDiv {
+		width: 85%;
+		margin-top: 10px;
+		/* height: 430px; */
+		/* height will be 300 px for small screen util you click on the compute button */
+		margin-bottom: 10px;
+	}
+}

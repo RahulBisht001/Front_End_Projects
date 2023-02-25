@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>My Calculator</title>
+		<!-- Css File Link -->
+		<link rel="stylesheet" href="CSS/calculator.css" />
+	</head>
+	<body>
+		<h1 class="center">Calculator</h1>
+		<p class="bar" id="bar" onclick="openBar()">
+			<i class="fa-solid fa-bars"></i>
+		</p>
+		<div class="barMenu" id="barMenu">
+			<div class="menu" id="menu">
+				<i
+					id="closeBar"
+					class="fa-sharp fa-solid fa-xmark"
+					onclick="closeBar()"
+				></i>
+				<a href="Loan.html">Loan Calculator</a>
+				<a href="Simple_Interest.html">Interest Calculator</a>
+			</div>
+		</div>
+		<div class="inputDiv">
+			<input class="input" type="text" value="0" id="" />
+		</div>
+		<div class="mainContainer">
+			<div class="container">
+				<div class="row">
+					<button class="btn">7</button>
+					<button class="btn">8</button>
+					<button class="btn">9</button>
+				</div>
+				<div class="row">
+					<button class="btn">4</button>
+					<button class="btn">5</button>
+					<button class="btn">6</button>
+				</div>
+				<div class="row">
+					<button class="btn">1</button>
+					<button class="btn">2</button>
+					<button class="btn">3</button>
+				</div>
+				<div class="row">
+					<button class="btn">0</button>
+					<button class="btn">.</button>
+					<button class="btn" id="clear">AC</button>
+				</div>
+			</div>
+			<div class="symbol">
+				<button class="btn Sbtn">/</button>
+				<button class="btn Sbtn">*</button>
+				<button class="btn Sbtn">-</button>
+				<button class="btn Sbtn">+</button>
+				<button class="btn Sbtn" id="equalTo">=</button>
+			</div>
+		</div>
+		<script
+			src="https://kit.fontawesome.com/ea26e84072.js"
+			crossorigin="anonymous"
+		></script>
+		<script src="JS/calculator.js"></script>
+	</body>
+</html>

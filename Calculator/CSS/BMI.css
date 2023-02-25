@@ -1,0 +1,26 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background-color: #000000;
+	color: rgb(255, 255, 255);
+}
+:root {
+	--FONTFAMILY: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+		"Lucida Sans", Arial, sans-serif;
+}
+.title {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 20px;
+	font-family: sans-serif;
+	letter-spacing: 0.4ch;
+}
+.title h1 {
+	padding: 2px 28px;
+	border-radius: 10px;
+	box-shadow: 5px 4px 7px rgb(91, 121, 244);
+}
