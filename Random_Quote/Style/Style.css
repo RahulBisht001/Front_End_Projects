@@ -1,0 +1,86 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #4d99f5;
+}
+/* -------------------- Main Container ----------------- */
+.container {
+	margin: 0 25%;
+	margin-top: 8%;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	background-color: rgb(244, 239, 239);
+	border-radius: 15px;
+	box-shadow: 0 0 15px rgb(0, 0, 0);
+	height: 300px;
+}
+/*  Internal Div :  (Quote and Writer) of Container */
+.Quote {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-basis: 50%;
+	flex-direction: column;
+	margin: 10px 10%;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+		"Lucida Sans", Arial, sans-serif;
+
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.writer {
+	flex-basis: 15%;
+	margin-right: 50px;
+	margin-bottom: 10px;
+	display: flex;
+	justify-content: flex-end;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+		"Lucida Sans", Arial, sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+}
+/* .icon {
+	display: flex;
+	justify-content: space-evenly;
+} */
+.btn {
+	display: flex;
+	justify-content: space-between;
+}
+.fa-brands {
+	font-size: 30px;
+	margin: 0 10px;
+	color: #035cca;
+	cursor: pointer;
+}
+/*  ------------Button Area --------------*/
+#qBtn {
+	padding: 10px 20px;
+	border: 1px solid #4d99f5;
+	border-radius: 13px;
+	color: #1f7bec;
+	margin-right: 30px;
+	letter-spacing: 0.1ch;
+	font-weight: 700;
+	cursor: pointer;
+	background-color: rgb(235, 234, 234);
+}
+#qBtn:hover {
+	color: white;
+	background-color: #4d99f5;
+}
+
+/* For Smaller Devices  */
+@media only screen and (max-width: 800px) {
+	.container {
+		margin: 0 5%;
+		margin-top: 10%;
+		height: 350px;
+	}
+}
